@@ -1,4 +1,4 @@
-let colorInterval; // To store the interval for color changing
+let colorInterval;
 
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll("input[type='button']");
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function startColorChanging() {
-    colorInterval = setInterval(changeColors, 200); // Change colors every 500 milliseconds
+    colorInterval = setInterval(changeColors, 200);
 }
 
 function stopColorChanging() {
