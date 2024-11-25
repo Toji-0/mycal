@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (button.value === "C") {
                 resultField.value = "";
                 stopColorChanging();
+                document.body.style.backgroundColor = ""; 
+                document.getElementById("result").style.color = "";
             } else {
                 resultField.value += button.value;
             }
