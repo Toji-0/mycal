@@ -7,7 +7,7 @@ body {
 .equation {
     margin-top: 5%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3rem; 
 }
 
 
@@ -28,14 +28,15 @@ table {
 
 input[type="button"] {
     width: 100%; 
-    padding: 15px;
+    padding: 15px; 
     background-color: rgb(31, 31, 31);
     color: white;
-    font-size: 1.2rem; /* Scaled font size */
+    font-size: 1.2rem; 
     font-weight: bold;
     border: none;
     border-radius: 5px;
 }
+
 
 input[type="button"]:hover {
     background-color: rgb(50, 50, 50);
@@ -43,7 +44,7 @@ input[type="button"]:hover {
 }
 
 input[type="text"] {
-    width: calc(100% - 40px); 
+    width: calc(100% - 40px);
     padding: 15px;
     text-align: center;
     font-size: 1.5rem;
@@ -53,13 +54,22 @@ input[type="text"] {
     box-sizing: border-box; 
 }
 
-@media (min-width: 768px) {
-    input[type="text"] {
-        font-size: 2rem;
+
+@media (max-width: 480px) {
+    .equation {
+        font-size: 2.5rem; 
     }
 
     input[type="button"] {
-        padding: 20px;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        font-size: 1.2rem;
+    }
+
+    table {
+        max-width: 300px; 
     }
 }
