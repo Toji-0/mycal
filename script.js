@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     buttons.forEach(button => {
         button.addEventListener("click", () => {
             if (button.value === "=") {
-                resultField.value = "dumbass";
+                resultField.value = "cringest shit ever..";
                 startColorChanging();
             } else if (button.value === "C") {
                 resultField.value = "";
