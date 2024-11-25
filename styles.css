@@ -5,38 +5,61 @@ body {
 }
 
 .equation {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
-    font-size: 5rem;
-
+    font-size: 3rem;
 }
 
+
+@media (min-width: 768px) {
+    .equation {
+        font-size: 5rem;
+    }
+}
 
 table {
     position: relative;
     border: 1px solid black;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5% auto; 
+    width: 90%; 
+    max-width: 600px; 
+    border-collapse: collapse; 
 }
 
 input[type="button"] {
-    width: 100%;
-    padding: 25px 50px;
+    width: 100%; 
+    padding: 15px;
     background-color: rgb(31, 31, 31);
     color: white;
-    font-size: 25px;
+    font-size: 1.2rem; /* Scaled font size */
     font-weight: bold;
     border: none;
     border-radius: 5px;
 }
 
+input[type="button"]:hover {
+    background-color: rgb(50, 50, 50);
+    cursor: pointer;
+}
+
 input[type="text"] {
-    padding: 20px 25px;
+    width: calc(100% - 40px); 
+    padding: 15px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    border: none;
-    border-radius: 5px;
     border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+@media (min-width: 768px) {
+    input[type="text"] {
+        font-size: 2rem;
+    }
+
+    input[type="button"] {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
 }
